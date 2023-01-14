@@ -8,11 +8,6 @@
       <label> Training Desc</label>
       <input type="text" [(ngModel)]="desc" />
     </div>
-    <button class="btn btn-primary" (click)="onAddTraining()">
-      Add Training
-    </button>
-  </div>
-  <div *ngFor="let training of trainings">
-    <training-app [myTraining]="training"></training-app>
+    <button (click)="onAddTraining()">Add Training</button>
   </div>
 </div>
